@@ -17,9 +17,22 @@ body {
 .layers {
 	perspective: 700px;
 	/* overflow: hidden; */
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
     margin-top: -1%;
 }
+
+@media screen and (max-height: 1050px) {
+	.layers {
+		margin-bottom: 20%;
+	}
+}
+
+@media screen and (max-height: 3000px) {
+	.layers {
+		margin-bottom: 8%;
+	}
+}
+
 .layers__container {
 	height: 100vh;
 	min-height: 500px;
@@ -109,24 +122,18 @@ body {
     color: #fff;
     word-wrap: break-word;
 }
-.button-start {
-	font-family: Arial;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: calc(var(--index) * .71);
-	letter-spacing: -.02vw;
-	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
-	background-color: transparent;
-	color: #fff;
-	border-radius: 10em;
-	border: rgb(255 255 255 / .4) 3px solid;
-	outline: none;
-	cursor: pointer;
-	margin-top: calc(var(--index) * 2.5);
-}
+
 .layer-4, .layer-5, .layer-6 {
 	pointer-events: none;
 }
+
+@media screen and (max-width: 1050px) {
+	.hero-content__p{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
 
 @media screen and (max-width: 600px) {
     .layer-2{
@@ -137,6 +144,11 @@ body {
 	.layer-5{
 		width: 300px;
 		height: 300px;
+	}
+
+	.hero-content__p{
+		padding-left: 15%;
+		padding-right: 10%;
 	}
 
 }
